@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Shope Online</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg fixed-top " id="navcust">
+      <div class="container-fluid">
+        <a href="./index.html"><img src="./img/Screenshot 2025-01-19 125903.png" alt="" class="ms-5 me-5 "
+            id="logg"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon" style="background-color: rgb(255, 255, 255);"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+            <li class="nav-item me-3">
+              <a class="nav-link " aria-current="page">MEN</a>
+            </li>
+            <li class="nav-item me-3">
+              <a class="nav-link">WOMENS</a>
+            </li>
+
+
+          </ul>
+
+          <form class="d-flex" role="search">
+            <input type="text" id="search" class="form-control" placeholder="Search products..." onkeyup="filterProducts()">
+            
+          </form>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <br><br><br><br>
+  <main>
+    <section>
+      <div class="banner">
+        <img src="./img/Untitled design.png" alt="Banner" class="img-fluid main-banner">
+        <img src="./img/shope/firstportrait.png" alt="Portrait Banner" class="img-fluid first-banner">
+      </div>
+    </section>
+    </section>
+
+    <div class="container ">
+      <h3 style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;  ">PRODUCTS:</h3>
+
+    </div>
+    <section>
+
+
+
+      <div class="container mt-10">
+        <div class="row" id="productsList">
+
+
+
+
+        </div>
+      </div>
+
+      <div class="modal fade" id="productModal" tabindex="-1" role="dialog" aria-labelledby="productModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="productModalLabel">Product Title</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <img id="modalProductImage" src="" alt="Product Image" style="width:100%; height:auto;">
+              <h3 id="modalProductTitle">Product Name</h3>
+              <p id="modalProductDescription">Details about the product.</p>
+              <p><strong>Price:</strong> $<span id="modalProductPrice">0.00</span></p>
+              <p><strong>Status:</strong> <span id="modalProductStatus">In Stock</span></p>
+            </div>
+            <div class="modal-footer">
+              <label for="quantity">Quantity: </label>
+              <select id="modalQuantity" name="quantity">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+              </select>
+              <button type="button" class="btn btn-primary" id="addToCartButton">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+  </main><br><br>
+
+
+  <footer class=" text-center text-lg-start text-white" style="background-color: #000000">
+    <div class="container-fluid p-4">
+      <div class="row mt-4">
+        <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase">CORPORATE</h5>
+
+          <ul class="list-unstyled mb-0">
+            <li>
+              <a href="#!" class="text-white">Corporate</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Careers</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Impact</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">contact</a>
+            </li>
+          </ul>
+        </div>
+
+
+
+        <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase">ABOUT</h5>
+
+          <ul class="list-unstyled">
+            <li>
+              <a href="#!" class="text-white">Privacy Policy</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Copyright</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Terms of Use</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Cookie Preferences</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">DoNot Sell or Share My info</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase">HELP</h5>
+
+          <ul class="list-unstyled">
+            <li>
+              <a href="#!" class="text-white">Security</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">CHelp Center</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Redeem Gift Card</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Cookie Policy</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Closed Captions</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase">GLOBAL SITES</h5>
+          <ul class="list-unstyled">
+            <li>
+              <a href="#!" class="text-white">Arabic</a>
+            </li>
+
+          </ul>
+        </div>
+
+        <div class="col-lg-1 col-md- mb-4 mb-md-0">
+        </div>
+        <div class="col-lg-1 col-md- mb-4 mb-md-0">
+          <img src="./img/logo/wwe_logo.svg" alt="" style=" width: 80px;">
+        </div>
+      </div>
+    </div>
+
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+      © 2024 Copyright:
+      <a class="text-white" href="https://mdbootstrap.com/">shopeonline.com</a>
+    </div>
+  </footer>
+
+  <script src="./script.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  
+</body>
+
+</html>

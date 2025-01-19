@@ -1,0 +1,282 @@
+/* body{
+  background-color: black;
+} */
+#navcust{
+  background-color: rgb(0, 0, 0);
+
+}
+#logg{
+
+  width: 120px;
+  height:60px;
+}
+.product img {
+  max-width: 150px;
+  height: auto;   
+  object-fit: contain;
+}
+
+
+
+
+.nav-link{
+  color: rgb(255, 255, 255);
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.main-banner {
+display: block;
+}
+.first-banner{
+
+  display: none;
+}
+#carrd{
+
+  gap: 20px;
+}
+#rom-1{
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, background-color 0.3s;
+  
+}
+#rom-1:hover{
+  transform: scale(1.05);
+ 
+
+}
+#rom-2{
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, background-color 0.3s;
+}
+#rom-2:hover{
+  transform: scale(1.05);
+ 
+
+}
+#rom-3{
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, background-color 0.3s;
+}
+#rom-3:hover{
+  transform: scale(1.05);
+ 
+
+}
+#rom-4{
+  
+  border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, background-color 0.3s;
+}
+#rom-4:hover{
+  transform: scale(1.05);
+ 
+
+}
+#rom-5{
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, background-color 0.3s;
+}
+#rom-5:hover{
+  transform: scale(1.05);
+ 
+
+}
+
+ .quantity-container {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      width: 500px;
+      text-align: center;
+ }
+
+
+/* Size Chart */
+.size-chart {
+  margin-bottom: 20px;
+}
+
+.size-chart label {
+  font-size: 18px;
+  margin-bottom: 10px;
+  display: block;
+  text-align: left;
+}
+
+.size-options {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.size-option {
+  font-size: 16px;
+  padding: 8px 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.size-option:hover {
+  background-color: #000000;
+  color: white;
+}
+
+.size-option.selected {
+  background-color: #4CAF50;
+  color: white;
+}
+
+select {
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: white;
+  cursor: pointer;
+}
+
+select {
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: white;
+  cursor: pointer;
+}
+
+select:focus {
+  outline: none;
+  border-color: #4A90E2;
+}
+
+
+.quantity-button {
+  padding: 10px 15px;
+  font-size: 16px;
+  border: none;
+  background-color: #000000;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.quantity-button:hover {
+  background-color: #f11f1f;
+}
+
+.quantity-button:focus {
+  outline: none;
+}
+
+.banner-second{
+  margin-bottom: 50px;
+}
+    .size-chart {
+      margin-bottom: 20px;
+      font-size: 18px;
+      font-weight: bold;
+    }
+
+    .size-chart span {
+      margin: 5px 10px;
+      padding: 5px 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .size-chart span.selected {
+      background-color: #4CAF50;
+      color: white;
+    }
+
+   
+.card img {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain; 
+}
+
+.product {
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.product:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.productDetails {
+  padding: 10px;
+}
+
+.priceAndButton {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 10px;
+}
+
+.priceAndButton .button {
+  background-color: #000000;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.priceAndButton .button:hover {
+  background-color: #f11f1f;
+}
+
+@media (max-width: 768px) {
+  .card {
+    width: 100%; 
+  }
+
+  .priceAndButton {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+
+@media only screen and (max-width: 600px) {
+  .main-banner {
+  display: none;
+  }
+  .first-banner{
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .card {
+    width: 100%; 
+  }
+}
+
+@media (max-width: 576px) {
+  .priceAndButton {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .priceAndButton span,
+  .priceAndButton button {
+    margin: 0.5rem;
+  }
+}
